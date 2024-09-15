@@ -63,82 +63,50 @@
     </header>
     <main class="">
         <section>
-
-            <body class="bg-gray-100">
-
-                <!-- Carousel Container -->
-                <div class="p-6">
-                    <div class="relative">
-                        <!-- Carousel Items -->
-                        <div class="carousel-item active relative w-full">
-                            <img src="https://via.placeholder.com/1200x400" alt="Slide 1"
-                                class="w-full h-auto object-cover rounded-lg">
-                            <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
-                                <h2 class="text-white text-4xl font-bold">Slide 1 Banner Text</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quibusdam laboriosam
-                                    ab, officia amet nesciunt repudiandae, maiores numquam corporis itaque sit,
-                                    explicabo delectus id repellendus voluptatibus veritatis non nostrum perspiciatis!
-                                </p>
-                            </div>
+            <!-- Carousel Container -->
+            <div class="p-6">
+                <div class="relative">
+                    <!-- Carousel Items -->
+                    <div class="carousel-item active relative w-full h-[300px]">
+                        <img src="images/banner1.jpg" alt="Slide 1"
+                            class="w-full h-auto object-cover rounded-lg">
+                        <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
+                            <h2 class="text-white text-4xl font-bold">Indulge in the rich, savory flavors of premium beef, crafted to perfection.</h2>
+                            
                         </div>
-
-                        <div class="carousel-item relative w-full hidden">
-                            <img src="https://via.placeholder.com/1200x400" alt="Slide 2"
-                                class="w-full h-auto object-cover rounded-lg">
-                            <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
-                                <h2 class="text-white text-4xl font-bold">Slide 3 Banner Text</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quibusdam laboriosam
-                                    ab, officia amet nesciunt repudiandae, maiores numquam corporis itaque sit,
-                                    explicabo delectus id repellendus voluptatibus veritatis non nostrum perspiciatis!
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item relative w-full hidden">
-                            <img src="https://via.placeholder.com/1200x400" alt="Slide 3"
-                                class="w-full h-auto object-cover rounded-lg">
-                            <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
-                                <h2 class="text-white text-4xl font-bold">Slide 2 Banner Text</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quibusdam laboriosam
-                                    ab, officia amet nesciunt repudiandae, maiores numquam corporis itaque sit,
-                                    explicabo delectus id repellendus voluptatibus veritatis non nostrum perspiciatis!
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Carousel Controls -->
-                        <button id="prev"
-                            class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">
-                            &#10094;
-                        </button>
-                        <button id="next"
-                            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">
-                            &#10095;
-                        </button>
                     </div>
+
+                    <div class="carousel-item relative w-full h-[300px] hidden">
+                        <img src="images/banner2.jpg" alt="Slide 2"
+                            class="w-full h-auto object-cover rounded-lg">
+                        <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
+                            <h2 class="text-white text-4xl font-bold">Fresh, crisp, and full of flavor – discover the finest farm-to-table lettuce today.</h2>
+                            
+                        </div>
+                    </div>
+
+                    <div class="carousel-item relative w-full h-[300px] hidden">
+                        <img src="images/banner3.jpg" alt="Slide 3"
+                            class="w-full h-auto object-cover rounded-lg">
+                        <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
+                            <h2 class="text-white text-4xl font-bold">Savor the ultimate burger experience – juicy, flavorful, and grilled to perfection.</h2>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button id="prev"
+                        class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">
+                        &#10094;
+                    </button>
+                    <button id="next"
+                        class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-3 rounded-full">
+                        &#10095;
+                    </button>
                 </div>
+            </div>
+        </section>
+        <section>
 
-                <!-- JavaScript for Carousel -->
-                <script>
-                    const slides = document.querySelectorAll('.carousel-item');
-                    let currentSlide = 0;
-
-                    document.getElementById('next').addEventListener('click', () => {
-                        changeSlide(1);
-                    });
-
-                    document.getElementById('prev').addEventListener('click', () => {
-                        changeSlide(-1);
-                    });
-
-                    function changeSlide(direction) {
-                        slides[currentSlide].classList.add('hidden');
-                        slides[currentSlide].classList.remove('active');
-                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
-                        slides[currentSlide].classList.remove('hidden');
-                        slides[currentSlide].classList.add('active');
-                    }
-                </script>
         </section>
     </main>
     <footer>
@@ -185,6 +153,7 @@
             </nav>
         </footer>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
