@@ -50,10 +50,10 @@
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
-                    <li><a>Potato</a></li>
-                    <li><a>Soup</a></li>
-                    <li><a>Chicken</a></li>
-                    <li><a>Beef</a></li>
+                    <li><button class="fetch-menu" data-value="potato">Potato</button></li>
+                    <li><button class="fetch-menu" data-value="soup">Soup</button></li>
+                    <li><button class="fetch-menu" data-value="chicken">Chicken</button></li>
+                    <li><button class="fetch-menu" data-value="beef">Beef</button></li>
                 </ul>
             </div>
             <div class="navbar-end">
@@ -68,28 +68,28 @@
                 <div class="relative">
                     <!-- Carousel Items -->
                     <div class="carousel-item active relative w-full h-[300px]">
-                        <img src="images/banner1.jpg" alt="Slide 1"
-                            class="w-full h-auto object-cover rounded-lg">
+                        <img src="images/banner1.jpg" alt="Slide 1" class="w-full h-auto object-cover rounded-lg">
                         <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
-                            <h2 class="text-white text-4xl font-bold">Indulge in the rich, savory flavors of premium beef, crafted to perfection.</h2>
-                            
+                            <h2 class="text-white text-4xl font-bold">Indulge in the rich, savory flavors of premium
+                                beef, crafted to perfection.</h2>
+
                         </div>
                     </div>
 
                     <div class="carousel-item relative w-full h-[300px] hidden">
-                        <img src="images/banner2.jpg" alt="Slide 2"
-                            class="w-full h-auto object-cover rounded-lg">
+                        <img src="images/banner2.jpg" alt="Slide 2" class="w-full h-auto object-cover rounded-lg">
                         <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
-                            <h2 class="text-white text-4xl font-bold">Fresh, crisp, and full of flavor – discover the finest farm-to-table lettuce today.</h2>
-                            
+                            <h2 class="text-white text-4xl font-bold">Fresh, crisp, and full of flavor – discover the
+                                finest farm-to-table lettuce today.</h2>
+
                         </div>
                     </div>
 
                     <div class="carousel-item relative w-full h-[300px] hidden">
-                        <img src="images/banner3.jpg" alt="Slide 3"
-                            class="w-full h-auto object-cover rounded-lg">
+                        <img src="images/banner3.jpg" alt="Slide 3" class="w-full h-auto object-cover rounded-lg">
                         <div class="absolute inset-0 flex flex-col w-3/4 mx-auto items-center justify-center">
-                            <h2 class="text-white text-4xl font-bold">Savor the ultimate burger experience – juicy, flavorful, and grilled to perfection.</h2>
+                            <h2 class="text-white text-4xl font-bold">Savor the ultimate burger experience – juicy,
+                                flavorful, and grilled to perfection.</h2>
                         </div>
                     </div>
 
@@ -106,7 +106,26 @@
             </div>
         </section>
         <section>
-
+            <!-- Data Display -->
+            <div id="dataContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" style="margin-top: 20px;"></div>
+            <!-- <div class="card bg-base-100 w-96 shadow-xl">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Shoes!
+                    <div class="badge badge-secondary">NEW</div>
+                  </h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <div class="badge badge-outline">Fashion</div>
+                    <div class="badge badge-outline">Products</div>
+                  </div>
+                </div>
+              </div> -->
         </section>
     </main>
     <footer>
@@ -153,7 +172,7 @@
             </nav>
         </footer>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
